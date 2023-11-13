@@ -20,7 +20,7 @@ POST auth/register
 
 ### Login
 ```sh
-POST auth/register
+POST auth/login
 ```
 | Schema | terms | 
 | ------ | ------ |
