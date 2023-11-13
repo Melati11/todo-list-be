@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const dotenv = require("dotenv");
 const db = require("./config/db")
 const allRoutes = require("./routes")
@@ -14,6 +15,7 @@ db.then(() => {
     console.log("connect to mongoDB failed")
  })
 
+app.use(cors())
 app.use(express.json())
 app.use(allRoutes)
 
